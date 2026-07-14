@@ -1,0 +1,42 @@
+// Schéma Prisma — connecté à Neon (Postgres) via Vercel Storage.
+// DATABASE_URL (pooled) et DIRECT_URL (direct, pour les migrations) sont
+// fournies automatiquement par l'intégration Vercel <-> Neon.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Etablissement {
+  id        String    @id
+  nom       String
+  sigle     String
+  ville     String
+  type      String // "Public" | "Privé"
+  filieres  Filiere[]
+}
+
+model Filiere {
+  id                    String        @id
+  nom                   String
+  etablissement         Etablissement @relation(fields: [etablissementId], references: [id])
+  etablissementId       String
+  diplome               String
+  duree                 String
+  domaine               String
+  // Champs stockés en JSON : structure variable, validée côté application (types/orientation.ts)
+  seriesAutorisees      Json // string[]
+  matieresCoefficients  Json // { matiere: string; coefficient: number }[]
+  conditionsParticulieres Json // ConditionParticuliere[]
+  debouches             Json? // string[]
+  placesDisponibles     Int?
+  description           String
+  pageGuide             Int? // page de référence dans le guide officiel (PDF)
+
+  @@index([etablissementId])
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink-950 text-paper font-body;
+  }
+  ::selection {
+    @apply bg-ember text-ink-950;
+  }
+  :focus-visible {
+    outline: 2px solid #e85d2c;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .bg-noticeboard {
+    background-image: linear-gradient(rgba(232, 93, 44, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232, 93, 44, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

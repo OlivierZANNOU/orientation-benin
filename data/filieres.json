@@ -1,0 +1,146 @@
+[
+  {
+    "id": "uac-informatique",
+    "nom": "Informatique",
+    "etablissementId": "uac",
+    "diplome": "Licence en Informatique",
+    "duree": "3 ans",
+    "domaine": "Sciences & Technologies",
+    "seriesAutorisees": ["C", "D", "E", "TI", "F2"],
+    "matieresCoefficients": [
+      { "matiere": "Mathématiques", "coefficient": 2 },
+      { "matiere": "Physique", "coefficient": 1 }
+    ],
+    "conditionsParticulieres": [
+      {
+        "id": "math-min",
+        "description": "Moyenne en Mathématiques ≥ 10",
+        "champ": "Mathématiques",
+        "operateur": ">=",
+        "valeur": 10
+      }
+    ],
+    "placesDisponibles": 120,
+    "description": "Formation aux fondamentaux de l'informatique : algorithmique, programmation, réseaux et bases de données.",
+    "debouches": ["Développeur logiciel", "Administrateur systèmes et réseaux", "Analyste de données", "Enseignant en informatique"],
+    "pageGuide": 42
+  },
+  {
+    "id": "insti-genie-informatique",
+    "nom": "Génie Informatique",
+    "etablissementId": "insti",
+    "diplome": "Licence Professionnelle en Génie Informatique",
+    "duree": "3 ans",
+    "domaine": "Sciences & Technologies",
+    "seriesAutorisees": ["C", "D", "TI", "F2", "F3"],
+    "matieresCoefficients": [
+      { "matiere": "Mathématiques", "coefficient": 3 },
+      { "matiere": "Physique", "coefficient": 2 },
+      { "matiere": "Anglais", "coefficient": 1 }
+    ],
+    "conditionsParticulieres": [
+      {
+        "id": "moyenne-min",
+        "description": "Moyenne générale ≥ 11",
+        "champ": "moyenneGenerale",
+        "operateur": ">=",
+        "valeur": 11
+      }
+    ],
+    "placesDisponibles": 60,
+    "description": "Formation technique orientée développement logiciel, systèmes embarqués et administration réseau.",
+    "debouches": ["Ingénieur systèmes embarqués", "Développeur d'applications", "Technicien réseaux"],
+    "pageGuide": 58
+  },
+  {
+    "id": "eneam-statistique",
+    "nom": "Statistique et Analyse Économique",
+    "etablissementId": "eneam",
+    "diplome": "Licence en Statistique",
+    "duree": "3 ans",
+    "domaine": "Économie & Gestion",
+    "seriesAutorisees": ["C", "D"],
+    "matieresCoefficients": [
+      { "matiere": "Mathématiques", "coefficient": 3 },
+      { "matiere": "Sciences Économiques", "coefficient": 1 }
+    ],
+    "conditionsParticulieres": [
+      {
+        "id": "math-min-14",
+        "description": "Moyenne en Mathématiques ≥ 12",
+        "champ": "Mathématiques",
+        "operateur": ">=",
+        "valeur": 12
+      }
+    ],
+    "placesDisponibles": 80,
+    "description": "Formation aux méthodes statistiques appliquées à l'économie, la démographie et la gestion des risques.",
+    "debouches": ["Statisticien", "Chargé d'études économiques", "Actuaire", "Data analyst"],
+    "pageGuide": 73
+  },
+  {
+    "id": "fasjep-economie",
+    "nom": "Sciences Économiques",
+    "etablissementId": "fasjep",
+    "diplome": "Licence en Économie",
+    "duree": "3 ans",
+    "domaine": "Économie & Gestion",
+    "seriesAutorisees": ["A", "B", "C", "D", "G2"],
+    "matieresCoefficients": [
+      { "matiere": "Mathématiques", "coefficient": 1 },
+      { "matiere": "Sciences Économiques", "coefficient": 2 },
+      { "matiere": "Français", "coefficient": 1 }
+    ],
+    "conditionsParticulieres": [],
+    "placesDisponibles": 200,
+    "description": "Formation généraliste en économie : microéconomie, macroéconomie, finance publique et développement.",
+    "debouches": ["Économiste", "Cadre bancaire", "Chargé de projets développement", "Fonctionnaire des finances publiques"],
+    "pageGuide": 91
+  },
+  {
+    "id": "epac-genie-civil",
+    "nom": "Génie Civil",
+    "etablissementId": "epac",
+    "diplome": "Licence Professionnelle en Génie Civil",
+    "duree": "3 ans",
+    "domaine": "Sciences & Technologies",
+    "seriesAutorisees": ["C", "D", "F1", "F2"],
+    "matieresCoefficients": [
+      { "matiere": "Mathématiques", "coefficient": 2 },
+      { "matiere": "Physique", "coefficient": 2 },
+      { "matiere": "Dessin Technique", "coefficient": 1 }
+    ],
+    "conditionsParticulieres": [
+      {
+        "id": "physique-min",
+        "description": "Moyenne en Physique ≥ 11",
+        "champ": "Physique",
+        "operateur": ">=",
+        "valeur": 11
+      }
+    ],
+    "placesDisponibles": 70,
+    "description": "Formation au bâtiment, aux travaux publics, à la topographie et à la gestion de chantier.",
+    "debouches": ["Ingénieur génie civil", "Conducteur de travaux", "Topographe", "Contrôleur de chantier"],
+    "pageGuide": 104
+  },
+  {
+    "id": "uac-droit",
+    "nom": "Droit",
+    "etablissementId": "uac",
+    "diplome": "Licence en Droit",
+    "duree": "3 ans",
+    "domaine": "Droit & Sciences Politiques",
+    "seriesAutorisees": ["A", "B", "C", "D", "G2", "G3"],
+    "matieresCoefficients": [
+      { "matiere": "Français", "coefficient": 2 },
+      { "matiere": "Histoire-Géographie", "coefficient": 1 },
+      { "matiere": "Philosophie", "coefficient": 1 }
+    ],
+    "conditionsParticulieres": [],
+    "placesDisponibles": 300,
+    "description": "Formation juridique fondamentale : droit civil, droit constitutionnel, droit international et sciences politiques.",
+    "debouches": ["Avocat", "Magistrat", "Juriste d'entreprise", "Diplomate"],
+    "pageGuide": 117
+  }
+]

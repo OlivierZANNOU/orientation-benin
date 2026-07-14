@@ -1,0 +1,37 @@
+[
+  {
+    "id": "uac",
+    "nom": "Université d'Abomey-Calavi",
+    "sigle": "UAC",
+    "ville": "Abomey-Calavi",
+    "type": "Public"
+  },
+  {
+    "id": "insti",
+    "nom": "Institut National Supérieur de Technologie Industrielle",
+    "sigle": "INSTI",
+    "ville": "Lokossa",
+    "type": "Public"
+  },
+  {
+    "id": "eneam",
+    "nom": "École Nationale d'Économie Appliquée et de Management",
+    "sigle": "ENEAM",
+    "ville": "Cotonou",
+    "type": "Public"
+  },
+  {
+    "id": "epac",
+    "nom": "École Polytechnique d'Abomey-Calavi",
+    "sigle": "EPAC",
+    "ville": "Abomey-Calavi",
+    "type": "Public"
+  },
+  {
+    "id": "fasjep",
+    "nom": "Faculté des Sciences Juridiques, Économiques et de Gestion",
+    "sigle": "FASJEP",
+    "ville": "Abomey-Calavi",
+    "type": "Public"
+  }
+]
