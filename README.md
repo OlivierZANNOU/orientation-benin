@@ -4,29 +4,7 @@
 ```bash
 npm install
 ```
-Il te faut une base Neon même en local pour tester :
-1. Crée un projet sur https://neon.tech (ou fais-le plus tard via Vercel, voir plus bas)
-2. Copie `.env.example` vers `.env` et colle-y ton `DATABASE_URL` / `DIRECT_URL`
-3. `npm run db:push` → crée les tables dans Neon à partir de `prisma/schema.prisma`
-4. `npm run db:seed` → importe les données d'exemple de `data/*.json` dans la base
-5. `npm run dev` → http://localhost:3000
 
-## Déploiement : GitHub → Vercel → Neon
-
-1. Pousse ce projet sur GitHub (`git init`, `git add .`, `git commit`, `git push`)
-2. Sur vercel.com → *Add New Project* → importe le repo. Vercel détecte Next.js tout seul.
-3. **Avant de cliquer sur Deploy** (ou juste après, tu peux relancer un déploiement) : va dans l'onglet **Storage** du
-   projet Vercel → *Create Database* → choisis **Neon**. Vercel crée la base et ajoute automatiquement les variables
-   d'environnement `DATABASE_URL` et `DIRECT_URL` au projet — tu n'as rien à copier-coller.
-4. Une fois Neon connecté, il faut créer les tables et y mettre les données. Deux options :
-   - **Depuis ta machine** (le plus simple) : récupère les variables dans Vercel → *Settings* → *Environment
-     Variables*, colle-les dans ton `.env` local, puis lance `npm run db:push` et `npm run db:seed`.
-   - **Depuis Vercel directement** : possible via la CLI Vercel (`vercel env pull` puis les mêmes commandes), utile si
-     tu changes de machine souvent.
-5. Redéploie (`git push` suffit à redéclencher un build, ou clique *Redeploy* dans Vercel).
-
-À partir de là, le site lit ses données depuis Neon via Prisma — plus aucun fichier JSON n'est utilisé au runtime
-(`data/*.json` ne sert plus que de source pour le script de seed).
 
 ## Structure
 
