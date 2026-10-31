@@ -1,10 +1,4 @@
 # ORIENT/229 — Plateforme d'aide à l'orientation des bacheliers (Bénin)
-## En local (avant tout déploiement)
-
-```bash
-npm install
-```
-
 
 ## Structure
 
